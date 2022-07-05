@@ -1,0 +1,46 @@
+@import 'variaveis.scss';
+
+
+* {
+  font-family: 'BiennaleRegular';
+  font-size: 14px;
+}
+
+html,
+  body,
+  #_next {
+    height: 100%;
+    margin: 0;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .oculto {
+    display: none;
+  }
+
+  input {
+    &::placeholder {
+      color: $cinza2;
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+      color: $cinza2;
+    }
+
+    &::-ms-input-placeholder {
+      color: $cinza2;
+    }
+    @media screen and (min-width: $desktopBreakpoint) {
+      flex-direction: row;
+    }
+  }
+
+
+@import '../components/botao/botao.scss';
+@import './paginaPublica.scss';
+@import '../components/inputPublico/inputPublico.scss';
